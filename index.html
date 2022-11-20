@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vocie2Code</title>
+  </head>
+
+  <body>
+    <pre>
+        Hello!
+        Thanks for being here!
+        To test this app you need to use Google Chrome.
+        Commands available:
+          - HTML open [tag]
+          - HTML content [sentence]
+          - HTML finish [tag]
+          - CSS open [tag]
+          - CSS style [property-name] is [value] (i.e CSS style color is blue)
+          - CSS finish
+        For example, to make this page blue, say:
+          - CSS open body
+          - CSS background color is blue
+          - CSS finish
+    </pre>
+
+    <hr />
+    <div>
+      <button id="start">Start Listening</button>
+      <button id="stop">Stop Listening</button>
+    </div>
+
+    <div>
+      <br />
+      <span>Status:</span>
+      <span id="status">Not Listening</span>
+      <br />
+      <span id="command"></span>
+    </div>
+
+    <div id="preview"></div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
